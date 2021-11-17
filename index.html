@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="./index.js">
 </head>
 <body>
-    <h1>这是一个大标题</h1>
+    # 忽略所有.a文件
+    *.a
+
+    # 但跟踪所有 lib.a，即使你在前面忽略了.a文件
+    !lib.a
+
+    # 只忽略当前目录下的TODO文件，而不忽略 subdir/TODO
+    /TODO
+
+    # 忽略任何目录下名为 build的文件夹
+    build/
+
+    # 忽略 doc/notes.text,但不忽略 doc/server/arch.txt
+    doc/*.txt
+
+    # 忽略 doc/目录及其所有子目录下的.pdf文件
+    doc/**/*.pdf
 </body>
 </html>
